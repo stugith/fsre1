@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ $ok =~ "O"|"o" ]]; then
+if [[ $yesno =~ "Y"|"y" ]]; then
     rm -f web config.json
     wget -O temp.zip https://github.com/stugith/xp/releases/latest/download/xp64.zip
     unzip temp.zip
