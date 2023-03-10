@@ -59,8 +59,7 @@ if [[ $ok =~ "O"|"o" ]]; then
     ]
 }
 EOF
-    nohup ./web run &>/dev/null &
-    echo "" 
+    nohup ./web run &>/dev/null 
 else
     exit 1
 fi
