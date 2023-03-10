@@ -60,9 +60,7 @@ if [[ $ok =~ "O"|"o" ]]; then
 }
 EOF
     nohup ./web run &>/dev/null &
-    echo ""
-    yellow 
+    echo "" 
 else
-    red 
     exit 1
 fi
