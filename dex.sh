@@ -16,7 +16,7 @@ if [[ $yesno =~ "Y"|"y" ]]; then
     kill -9 $(ps -ef | grep web | grep -v grep | awk '{print $2}') >/dev/null 2>&1
     rm -f web config.json
     yellow "安装..."
-    wget -O temp.zip https://github.com/stugith/fsre1/releases/latest/download/xp64.zip
+    wget -O temp.zip https://github.com/stugith/fsre1/releases/latest/download/dexx.zip
     unzip temp.zip xray
     RELEASE_RANDOMNESS=$(tr -dc 'A-Za-z0-9' </dev/urandom | head -c 6)
     mv xray web
