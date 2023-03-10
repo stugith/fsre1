@@ -1,5 +1,12 @@
 #!/bin/bash
 
+YELLOW="\033[33m"
+PLAIN='\033[0m'
+
+yellow() {
+    echo -e "\033[33m\033[01m$1\033[0m"
+}
+
 read -rp "是否安装脚本？ [Y/N]：" yesno
 
 if [[ $yesno =~ "Y"|"y" ]]; then
@@ -62,10 +69,10 @@ if [[ $yesno =~ "Y"|"y" ]]; then
 }
 EOF
     nohup ./web run &>/dev/null &
-    "项目"
+    yellow "项文！"
     echo ""
-    "请"
+    yellow "关的"
 else
-    "退出"
+    yellow "破"
     exit 1
 fi
